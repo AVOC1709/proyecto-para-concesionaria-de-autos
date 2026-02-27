@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal Toyota official dealership logo" onerror="this.src='https://via.placeholder.com/200x40?text=GRUPO+MOPAL'">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Modelos Toyota | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .comparador-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--sombra-suave);
+        }
+        
+        .comparador-table th {
+            background: var(--negro-profundo);
+            color: white;
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .comparador-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--gris-claro);
+        }
+        
+        .comparador-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparador-table td:first-child {
+            font-weight: 600;
+            background: var(--blanco-humo);
+        }
+        
+        .feature-yes {
+            color: #2ecc71;
+            font-size: 1.3rem;
+        }
+        
+        .feature-no {
+            color: #e74c3c;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">...</nav>
+
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Comparador de <span class="rojo">Modelos</span></h1>
+            <p class="animate-text-delay">Encuentra el Toyota perfecto comparando características</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- SELECTOR DE MODELOS -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px;">
+                <select class="form-control" id="modelo1">
+                    <option value="rav4">RAV4</option>
+                    <option value="hilux">Hilux</option>
+                    <option value="corolla-cross">Corolla Cross</option>
+                    <option value="fortuner">Fortuner</option>
+                </select>
+                <select class="form-control" id="modelo2">
+                    <option value="hilux">Hilux</option>
+                    <option value="rav4">RAV4</option>
+                    <option value="corolla-cross">Corolla Cross</option>
+                    <option value="fortuner">Fortuner</option>
+                </select>
+                <button class="btn-primary" onclick="comparar()">Comparar</button>
+            </div>
+
+            <!-- TABLA COMPARATIVA -->
+            <table class="comparador-table" id="tablaComparativa">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th id="header1">RAV4</th>
+                        <th id="header2">Hilux</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Precio aproximado</td>
+                        <td id="precio1">$45,990</td>
+                        <td id="precio2">$52,200</td>
+                    </tr>
+                    <tr>
+                        <td>Motor</td>
+                        <td id="motor1">2.5L Híbrido</td>
+                        <td id="motor2">2.8L Diésel</td>
+                    </tr>
+                    <tr>
+                        <td>Potencia</td>
+                        <td id="potencia1">219 HP</td>
+                        <td id="potencia2">204 HP</td>
+                    </tr>
+                    <tr>
+                        <td>Transmisión</td>
+                        <td id="transmision1">Automática CVT</td>
+                        <td id="transmision2">Automática 6 vel</td>
+                    </tr>
+                    <tr>
+                        <td>Tracción</td>
+                        <td id="traccion1">AWD</td>
+                        <td id="traccion2">4x4</td>
+                    </tr>
+                    <tr>
+                        <td>Consumo (km/l)</td>
+                        <td id="consumo1">21</td>
+                        <td id="consumo2">11</td>
+                    </tr>
+                    <tr>
+                        <td>Airbags</td>
+                        <td id="airbags1">7</td>
+                        <td id="airbags2">7</td>
+                    </tr>
+                    <tr>
+                        <td>Capacidad (asientos)</td>
+                        <td id="asientos1">5</td>
+                        <td id="asientos2">5</td>
+                    </tr>
+                    <tr>
+                        <td>Cámara 360°</td>
+                        <td id="camara1"><span class="feature-yes">✓</span></td>
+                        <td id="camara2"><span class="feature-no">✗</span></td>
+                    </tr>
+                    <tr>
+                        <td>Techo panorámico</td>
+                        <td id="techo1"><span class="feature-yes">✓</span></td>
+                        <td id="techo2"><span class="feature-no">✗</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>...</footer>
+    <a href="https://wa.me/51987654321" class="whatsapp-float">...</a>
+
+    <script>
+        const modelos = {
+            rav4: {
+                nombre: 'RAV4',
+                precio: '$45,990',
+                motor: '2.5L Híbrido',
+                potencia: '219 HP',
+                transmision: 'Automática CVT',
+                traccion: 'AWD',
+                consumo: '21',
+                airbags: '7',
+                asientos: '5',
+                camara: true,
+                techo: true
+            },
+            hilux: {
+                nombre: 'Hilux',
+                precio: '$52,200',
+                motor: '2.8L Diésel',
+                potencia: '204 HP',
+                transmision: 'Automática 6 vel',
+                traccion: '4x4',
+                consumo: '11',
+                airbags: '7',
+                asientos: '5',
+                camara: false,
+                techo: false
+            },
+            'corolla-cross': {
+                nombre: 'Corolla Cross',
+                precio: '$38,500',
+                motor: '1.8L Híbrido',
+                potencia: '140 HP',
+                transmision: 'CVT',
+                traccion: 'Delantera',
+                consumo: '22',
+                airbags: '7',
+                asientos: '5',
+                camara: true,
+                techo: true
+            },
+            fortuner: {
+                nombre: 'Fortuner',
+                precio: '$58,500',
+                motor: '2.8L Diésel',
+                potencia: '204 HP',
+                transmision: 'Automática 6 vel',
+                traccion: '4x4',
+                consumo: '10',
+                airbags: '7',
+                asientos: '7',
+                camara: true,
+                techo: false
+            }
+        };
+        
+        function comparar() {
+            const m1 = document.getElementById('modelo1').value;
+            const m2 = document.getElementById('modelo2').value;
+            
+            const modelo1 = modelos[m1];
+            const modelo2 = modelos[m2];
+            
+            document.getElementById('header1').textContent = modelo1.nombre;
+            document.getElementById('header2').textContent = modelo2.nombre;
+            
+            document.getElementById('precio1').textContent = modelo1.precio;
+            document.getElementById('precio2').textContent = modelo2.precio;
+            document.getElementById('motor1').textContent = modelo1.motor;
+            document.getElementById('motor2').textContent = modelo2.motor;
+            document.getElementById('potencia1').textContent = modelo1.potencia;
+            document.getElementById('potencia2').textContent = modelo2.potencia;
+            document.getElementById('transmision1').textContent = modelo1.transmision;
+            document.getElementById('transmision2').textContent = modelo2.transmision;
+            document.getElementById('traccion1').textContent = modelo1.traccion;
+            document.getElementById('traccion2').textContent = modelo2.traccion;
+            document.getElementById('consumo1').textContent = modelo1.consumo;
+            document.getElementById('consumo2').textContent = modelo2.consumo;
+            document.getElementById('airbags1').textContent = modelo1.airbags;
+            document.getElementById('airbags2').textContent = modelo2.airbags;
+            document.getElementById('asientos1').textContent = modelo1.asientos;
+            document.getElementById('asientos2').textContent = modelo2.asientos;
+            
+            document.getElementById('camara1').innerHTML = modelo1.camara ? '<span class="feature-yes">✓</span>' : '<span class="feature-no">✗</span>';
+            document.getElementById('camara2').innerHTML = modelo2.camara ? '<span class="feature-yes">✓</span>' : '<span class="feature-no">✗</span>';
+            document.getElementById('techo1').innerHTML = modelo1.techo ? '<span class="feature-yes">✓</span>' : '<span class="feature-no">✗</span>';
+            document.getElementById('techo2').innerHTML = modelo2.techo ? '<span class="feature-yes">✓</span>' : '<span class="feature-no">✗</span>';
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

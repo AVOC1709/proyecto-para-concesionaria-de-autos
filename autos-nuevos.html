@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Nuevos Toyota en Pucallpa | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR (igual que en index) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal - Toyota">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html" class="active">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Autos <span class="rojo">Nuevos</span> Toyota</h1>
+            <p class="animate-text-delay">Descubre la más amplia variedad de Toyota 0km en Pucallpa, Huánuco y Pasco</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Autos Nuevos</li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- BARRA DE BÚSQUEDA -->
+            <div class="search-bar" style="margin-bottom: 30px;">
+                <input type="text" id="search-autos" class="form-control" placeholder="Buscar por modelo, características...">
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filter-bar">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">SUVs</button>
+                <button class="filter-btn">Sedanes</button>
+                <button class="filter-btn">Hatchbacks</button>
+                <button class="filter-btn">Pickups</button>
+                <button class="filter-btn">Híbridos</button>
+                <button class="filter-btn">4x4</button>
+            </div>
+
+            <!-- GRID DE AUTOS -->
+            <div class="autos-grid">
+                <!-- RAV4 -->
+                <div class="auto-card" data-id="rav4" data-category="suv hibrido 4x4">
+                    <div class="auto-badge">Nuevo 2026</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota RAV4</h3>
+                        <div class="auto-price">$45,990 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Híbrido</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Automático</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>5 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=rav4" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=rav4" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hilux -->
+                <div class="auto-card" data-id="hilux" data-category="pickup 4x4 diesel">
+                    <div class="auto-badge">4x4</div>
+                    <div class="auto-image">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Hilux</h3>
+                        <div class="auto-price">$52,200 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Manual/Auto</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>1 ton</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=hilux" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=hilux" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corolla Cross -->
+                <div class="auto-card" data-id="corolla-cross" data-category="suv hibrido">
+                    <div class="auto-badge">Más vendido</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Corolla Cross</h3>
+                        <div class="auto-price">$38,500 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Híbrido</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>CVT</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>5 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=corolla-cross" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=corolla-cross" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yaris -->
+                <div class="auto-card" data-id="yaris" data-category="hatchback economico">
+                    <div class="auto-badge">Económico</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Yaris</h3>
+                        <div class="auto-price">$22,800 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Gasolina</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Manual/Auto</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>5 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=yaris" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=yaris" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corolla Sedán -->
+                <div class="auto-card" data-id="corolla" data-category="sedan hibrido">
+                    <div class="auto-badge">Sedán</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Corolla</h3>
+                        <div class="auto-price">$28,900 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Híbrido</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>CVT</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>5 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=corolla" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=corolla" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fortuner -->
+                <div class="auto-card" data-id="fortuner" data-category="suv 4x4 diesel 7asientos">
+                    <div class="auto-badge">7 asientos</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Fortuner</h3>
+                        <div class="auto-price">$58,500 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Automático</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>7 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=fortuner" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=fortuner" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Land Cruiser Prado -->
+                <div class="auto-card" data-id="prado" data-category="suv lujo 4x4">
+                    <div class="auto-badge">Lujo</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Land Cruiser Prado</h3>
+                        <div class="auto-price">$75,000 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Automático</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>7 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=prado" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=prado" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiace -->
+                <div class="auto-card" data-id="hiace" data-category="van comercial">
+                    <div class="auto-badge">Comercial</div>
+                    <div class="auto-image">
+                        <i class="fas fa-shuttle-van"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Hiace</h3>
+                        <div class="auto-price">$42,000 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Manual</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-users"></i>
+                                <span>12 asientos</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=hiace" class="btn-primary">Ver modelo</a>
+                            <a href="cotizar.html?modelo=hiace" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINACIÓN -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <!-- SECCIÓN ASESOR -->
+        <section class="section-asesor">
+            <div class="container">
+                <div class="asesor-content">
+                    <h2>📞 ¿Necesitas ayuda para elegir?</h2>
+                    <p>Nuestros asesores te ayudarán a encontrar el Toyota perfecto para ti</p>
+                    <a href="contacto.html" class="btn-primary">
+                        <i class="fas fa-whatsapp"></i>
+                        Contactar asesor
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (igual que en index) -->
+    <footer>
+        <!-- Mismo footer que en index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>GRUPO MOPAL</span>
+                    </div>
+                    <p>Concesionario oficial de la marca Toyota en Pucallpa, Huánuco y Pasco.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Autos</h4>
+                    <ul>
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (061) 123-456</li>
+                        <li><i class="fas fa-envelope"></i> ventas@grupomopal.pe</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jr. Grau 135, Pucallpa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Grupo Mopal - Todos los derechos reservados</p>
+                <p class="toyota-credit">Toyota - Siempre mejor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/51987654321" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

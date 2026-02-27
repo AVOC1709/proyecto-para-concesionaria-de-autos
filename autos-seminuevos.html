@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Seminuevos Toyota Certificados | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR (igual) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal - Toyota">
+                <span class="brand-name"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html" class="active">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Autos <span class="rojo">Seminuevos</span> Certificados</h1>
+            <p class="animate-text-delay">Vehículos revisados y garantizados por Toyota, como nuevos</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Autos Seminuevos</li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- FILTROS -->
+            <div class="filter-bar">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">2018-2020</button>
+                <button class="filter-btn">2021-2023</button>
+                <button class="filter-btn">SUVs</button>
+                <button class="filter-btn">Sedanes</button>
+                <button class="filter-btn">Pickups</button>
+            </div>
+
+            <!-- GRID DE SEMINUEVOS -->
+            <div class="autos-grid">
+                <!-- RAV4 2022 -->
+                <div class="auto-card">
+                    <div class="auto-badge">Certificado</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota RAV4 2022</h3>
+                        <div class="auto-price">$38,900 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Híbrido</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>35,000 km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2022</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=rav4-2022" class="btn-primary">Ver detalles</a>
+                            <a href="cotizar.html?modelo=rav4-2022" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corolla 2021 -->
+                <div class="auto-card">
+                    <div class="auto-badge">Como nuevo</div>
+                    <div class="auto-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Corolla 2021</h3>
+                        <div class="auto-price">$23,500 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Gasolina</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>45,000 km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2021</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=corolla-2021" class="btn-primary">Ver detalles</a>
+                            <a href="cotizar.html?modelo=corolla-2021" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hilux 2020 -->
+                <div class="auto-card">
+                    <div class="auto-badge">4x4</div>
+                    <div class="auto-image">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="auto-details">
+                        <h3 class="auto-title">Toyota Hilux 2020</h3>
+                        <div class="auto-price">$41,000 <span>aprox.</span></div>
+                        <div class="auto-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>80,000 km</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2020</span>
+                            </div>
+                        </div>
+                        <div class="auto-actions">
+                            <a href="modelo.html?modelo=hilux-2020" class="btn-primary">Ver detalles</a>
+                            <a href="cotizar.html?modelo=hilux-2020" class="btn-secondary">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANNER CERTIFICACIÓN -->
+        <section style="background: linear-gradient(135deg, var(--negro-profundo), var(--negro-suave)); color: white; padding: 60px 0; margin: 60px 0;">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Programa de <span class="rojo">Certificación</span></h2>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px;">Todos nuestros seminuevos pasan por una rigurosa inspección de 160 puntos y cuentan con garantía Toyota</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;">
+                    <div><i class="fas fa-clipboard-check" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p style="margin-top: 10px;">Inspección de 160 puntos</p></div>
+                    <div><i class="fas fa-wrench" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p style="margin-top: 10px;">Mantenimiento completo</p></div>
+                    <div><i class="fas fa-file-signature" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p style="margin-top: 10px;">Historial de servicio</p></div>
+                    <div><i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p style="margin-top: 10px;">Garantía extendida</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (igual) -->
+    <footer>...</footer>
+    <a href="https://wa.me/51987654321" class="whatsapp-float">...</a>
+    <script src="js/script.js"></script>
+</body>
+</html>

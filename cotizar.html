@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotiza tu Toyota | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal Toyota official dealership logo" 
+                style="display:block; margin: 0 auto; width: 800px; height: auto;">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Cotiza tu <span class="rojo">Toyota</span></h1>
+            <p class="animate-text-delay">Recibe una cotización personalizada en minutos</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container" style="max-width: 900px;">
+                <form id="form-cotizacion">
+                    <h3 style="margin-bottom: 30px;">Datos del <span class="rojo">vehículo</span></h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Modelo *</label>
+                            <select class="form-control" id="modeloSelect" required>
+                                <option value="">Selecciona un modelo</option>
+                                <option value="RAV4">RAV4</option>
+                                <option value="Hilux">Hilux</option>
+                                <option value="Corolla Cross">Corolla Cross</option>
+                                <option value="Yaris">Yaris</option>
+                                <option value="Corolla">Corolla</option>
+                                <option value="Fortuner">Fortuner</option>
+                                <option value="Land Cruiser Prado">Land Cruiser Prado</option>
+                                <option value="Hiace">Hiace</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Versión</label>
+                            <select class="form-control">
+                                <option>Base</option>
+                                <option>Intermedia</option>
+                                <option>Full</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Año</label>
+                            <select class="form-control">
+                                <option>2026</option>
+                                <option>2025</option>
+                                <option>2024</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Color</label>
+                            <select class="form-control">
+                                <option>Blanco</option>
+                                <option>Negro</option>
+                                <option>Gris</option>
+                                <option>Rojo</option>
+                                <option>Azul</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 40px 0 30px;">Tus <span class="rojo">datos</span></h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre completo *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Teléfono *</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Documento de identidad</label>
+                            <input type="text" class="form-control" placeholder="DNI o RUC">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sede de preferencia</label>
+                        <select class="form-control">
+                            <option>Ucayali</option>
+                            <option>Huánuco</option>
+                            <option>Pasco</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Comentarios adicionales</label>
+                        <textarea class="form-control" rows="4" placeholder="¿Alguna preferencia especial?"></textarea>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones y autorizo el tratamiento de mis datos</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 15px; font-size: 1.2rem;">
+                        Enviar cotización <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>...</footer>
+    <a href="https://wa.me/51987654321" class="whatsapp-float">...</a>
+
+    <script>
+        // Cargar modelo desde URL si viene de otra página
+        const urlParams = new URLSearchParams(window.location.search);
+        const modelo = urlParams.get('modelo');
+        if (modelo) {
+            const select = document.getElementById('modeloSelect');
+            for (let option of select.options) {
+                if (option.value.toLowerCase() === modelo.toLowerCase()) {
+                    option.selected = true;
+                    break;
+                }
+            }
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

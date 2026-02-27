@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro Toyota | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal Toyota official dealership logo" onerror="this.src='https://via.placeholder.com/200x40?text=GRUPO+MOPAL'">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Seguro <span class="rojo">Toyota</span></h1>
+            <p class="animate-text-delay">Protección diseñada por expertos para tu Toyota</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- COBERTURAS -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 60px;">
+                <div style="background: white; padding: 40px; border-radius: 20px; text-align: center;">
+                    <i class="fas fa-shield-alt" style="font-size: 4rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                    <h3>Básico</h3>
+                    <p style="font-size: 2rem; color: var(--rojo-toyota);">$399/año</p>
+                    <ul style="list-style: none; text-align: left; margin-top: 20px;">
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Robo total</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Incendio</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Responsabilidad civil</li>
+                    </ul>
+                </div>
+                <div style="background: white; padding: 40px; border-radius: 20px; text-align: center; border: 3px solid var(--rojo-toyota);">
+                    <i class="fas fa-shield-alt" style="font-size: 4rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                    <h3>Completo</h3>
+                    <p style="font-size: 2rem; color: var(--rojo-toyota);">$699/año</p>
+                    <ul style="list-style: none; text-align: left; margin-top: 20px;">
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Todo del básico</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Choque</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Fenómenos naturales</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Cristales</li>
+                    </ul>
+                </div>
+                <div style="background: white; padding: 40px; border-radius: 20px; text-align: center;">
+                    <i class="fas fa-shield-alt" style="font-size: 4rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                    <h3>Premium</h3>
+                    <p style="font-size: 2rem; color: var(--rojo-toyota);">$999/año</p>
+                    <ul style="list-style: none; text-align: left; margin-top: 20px;">
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Todo del completo</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Auto reemplazo</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Asistencia legal</li>
+                        <li><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Accesorios</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- VENTAJAS -->
+            <section style="background: linear-gradient(135deg, var(--negro-profundo), var(--negro-suave)); color: white; padding: 60px; border-radius: 30px;">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px;">Ventajas del <span class="rojo">Seguro Toyota</span></h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <i class="fas fa-wrench" style="font-size: 3rem; color: var(--rojo-toyota);"></i>
+                        <div>
+                            <h3>Reparación en concesionario</h3>
+                            <p>Solo Talleres Toyota certificados</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <i class="fas fa-car" style="font-size: 3rem; color: var(--rojo-toyota);"></i>
+                        <div>
+                            <h3>Auto de reemplazo</h3>
+                            <p>Mientras reparan tu Toyota</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <i class="fas fa-tachometer-alt" style="font-size: 3rem; color: var(--rojo-toyota);"></i>
+                        <div>
+                            <h3>Sin deducible</h3>
+                            <p>En ciertos siniestros</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <i class="fas fa-clock" style="font-size: 3rem; color: var(--rojo-toyota);"></i>
+                        <div>
+                            <h3>Atención 24/7</h3>
+                            <p>Asistencia en carretera</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>...</footer>
+    <a href="https://wa.me/51987654321" class="whatsapp-float">...</a>
+    <script src="js/script.js"></script>
+</body>
+</html>

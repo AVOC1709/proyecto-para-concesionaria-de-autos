@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postventa Toyota | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal Toyota official dealership logo" onerror="this.src='https://via.placeholder.com/200x40?text=GRUPO+MOPAL'">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Postventa <span class="rojo">Toyota</span></h1>
+            <p class="animate-text-delay">Acompañamiento completo después de tu compra</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- PAQUETES DE MANTENIMIENTO -->
+            <h2 class="section-title">Paquetes de <span class="rojo">mantenimiento</span></h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 60px;">
+                <div style="background: white; padding: 40px; border-radius: 20px; text-align: center;">
+                    <h3 style="font-size: 2rem; color: var(--rojo-toyota);">Básico</h3>
+                    <p style="font-size: 1.5rem; margin: 20px 0;">$299</p>
+                    <ul style="list-style: none; text-align: left;">
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Cambio de aceite</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Revisión general</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Rotación de neumáticos</li>
+                    </ul>
+                </div>
+                <div style="background: white; padding: 40px; border-radius: 20px; text-align: center; border: 3px solid var(--rojo-toyota);">
+                    <h3 style="font-size: 2rem; color: var(--rojo-toyota);">Premium</h3>
+                    <p style="font-size: 1.5rem; margin: 20px 0;">$599</p>
+                    <ul style="list-style: none; text-align: left;">
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Todo del básico</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Filtros de aire</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Líquido de frenos</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Bujías</li>
+                    </ul>
+                </div>
+                <div style="background: white; padding: 40px; border-radius: 20px; text-align: center;">
+                    <h3 style="font-size: 2rem; color: var(--rojo-toyota);">Full</h3>
+                    <p style="font-size: 1.5rem; margin: 20px 0;">$899</p>
+                    <ul style="list-style: none; text-align: left;">
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Todo del premium</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Correas</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Refrigerante</li>
+                        <li style="margin: 10px 0;"><i class="fas fa-check" style="color: var(--rojo-toyota);"></i> Revisión de suspensión</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- REPUESTOS ORIGINALES -->
+            <section style="background: var(--blanco-humo); padding: 60px; border-radius: 30px; margin-bottom: 60px;">
+                <h2 class="section-title">Repuestos <span class="rojo">originales</span></h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">Garantizamos repuestos genuinos Toyota con la más alta calidad</p>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                    <div style="text-align: center;"><i class="fas fa-oil-can" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p>Aceites</p></div>
+                    <div style="text-align: center;"><i class="fas fa-filter" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p>Filtros</p></div>
+                    <div style="text-align: center;"><i class="fas fa-car-battery" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p>Baterías</p></div>
+                    <div style="text-align: center;"><i class="fas fa-tachometer-alt" style="font-size: 3rem; color: var(--rojo-toyota);"></i><p>Pastillas</p></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>...</footer>
+    <a href="https://wa.me/51987654321" class="whatsapp-float">...</a>
+    <script src="js/script.js"></script>
+</body>
+</html>

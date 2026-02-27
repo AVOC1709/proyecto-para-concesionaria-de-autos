@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Mopal - Concesionario Oficial Toyota en Pucallpa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal Toyota official dealership logo" onerror="this.src=''">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO PRINCIPAL -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/logo-mopal-toyota.webp" alt="" style="display:block; margin: 0 auto; width: 500px; height: auto;">
+
+            <p class="animate-text-delay">Autos Nuevos en Pucallpa - Concesionario Oficial Toyota</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Clientes satisfechos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Sedes en Perú</span>
+                </div>
+            </div>
+            <a href="autos-nuevos.html" class="cta-button-header">Ver modelos <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <!-- BENEFICIOS DESTACADOS -->
+        <section class="section-beneficios">
+            <div class="container">
+                <h2 class="section-title">Beneficios <span class="rojo">exclusivos</span></h2>
+                <p class="section-subtitle">Todo lo que necesitas para llevar tu Toyota a casa</p>
+                
+                <div class="beneficios-grid">
+                    <article class="beneficio-card">
+                        <div class="card-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>En parte de pago</h3>
+                        <p>Entrega tu auto usado y llévate el Toyota que tanto quieres con un sistema rápido y seguro.</p>
+                        <a href="beneficios.html" class="card-link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="beneficio-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Seguro Toyota</h3>
+                        <p>Protección especializada con tarifas preferenciales y atención capacitada de Toyota.</p>
+                        <a href="seguro.html" class="card-link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="beneficio-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Toyota Life</h3>
+                        <p>Cuotas hasta 50% más bajas que un plan tradicional. ¡Hazlo realidad!</p>
+                        <a href="beneficios.html" class="card-link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="beneficio-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Toyota Value</h3>
+                        <p>Plan de mantenimiento prepagado para mantener tu Toyota siempre en perfecto estado.</p>
+                        <a href="servicio-tecnico.html" class="card-link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+
+                <div class="cta-container">
+                    <a href="autos-nuevos.html" class="cta-button-large">
+                        <span>VER TODOS LOS MODELOS</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUTOS DESTACADOS -->
+        <section class="section-autos">
+            <div class="container">
+                <h2 class="section-title">Modelos <span class="rojo">destacados</span></h2>
+                <p class="section-subtitle">Los Toyota más buscados por nuestros clientes</p>
+                
+                <div class="autos-grid">
+                    <!-- RAV4 -->
+                    <div class="auto-card" data-id="rav4" data-category="suv hibrido">
+                        <div class="auto-badge">Nuevo 2026</div>
+                        <div class="auto-image">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div class="auto-details">
+                            <h3 class="auto-title">Toyota RAV4</h3>
+                            <div class="auto-price">$45,990 <span>aprox.</span></div>
+                            <div class="auto-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                    <span>Híbrido</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Automático</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>5 asientos</span>
+                                </div>
+                            </div>
+                            <div class="auto-actions">
+                                <a href="modelo.html?modelo=rav4" class="btn-primary">Ver modelo</a>
+                                <button class="btn-secondary btn-comparar"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hilux -->
+                    <div class="auto-card" data-id="hilux" data-category="pickup 4x4">
+                        <div class="auto-badge">4x4</div>
+                        <div class="auto-image">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="auto-details">
+                            <h3 class="auto-title">Toyota Hilux</h3>
+                            <div class="auto-price">$52,200 <span>aprox.</span></div>
+                            <div class="auto-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                    <span>Diésel</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Manual/Auto</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-weight-hanging"></i>
+                                    <span>1 ton</span>
+                                </div>
+                            </div>
+                            <div class="auto-actions">
+                                <a href="modelo.html?modelo=hilux" class="btn-primary">Ver modelo</a>
+                                <button class="btn-secondary btn-comparar"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Corolla Cross -->
+                    <div class="auto-card" data-id="corolla-cross" data-category="suv">
+                        <div class="auto-badge">Más vendido</div>
+                        <div class="auto-image">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="auto-details">
+                            <h3 class="auto-title">Toyota Corolla Cross</h3>
+                            <div class="auto-price">$38,500 <span>aprox.</span></div>
+                            <div class="auto-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                    <span>Híbrido</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>CVT</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>5 asientos</span>
+                                </div>
+                            </div>
+                            <div class="auto-actions">
+                                <a href="modelo.html?modelo=corolla-cross" class="btn-primary">Ver modelo</a>
+                                <button class="btn-secondary btn-comparar"><i class="fas fa-balance-scale"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-container">
+                    <a href="autos-nuevos.html" class="btn-primary">Ver todos los modelos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ASESOR -->
+        <section class="section-asesor">
+            <div class="container">
+                <div class="asesor-content">
+                    <h2>📞 ¿Hablamos?</h2>
+                    <p>Nuestros asesores especializados están listos para resolver todas tus dudas</p>
+                    <div class="asesor-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Respuesta inmediata</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Asesores expertos</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>Soporte 24/7</span>
+                        </div>
+                    </div>
+                    <a href="contacto.html" class="btn-primary">
+                        <i class="fas fa-whatsapp"></i>
+                        Contactar ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>¿Listo para manejar tu <span class="rojo">Toyota</span>?</h2>
+                    <p>Recibe ofertas exclusivas y novedades directamente en tu correo</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirme <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>GRUPO MOPAL</span>
+                    </div>
+                    <p>Concesionario oficial de la marca Toyota en Pucallpa, Huánuco y Pasco. Excelencia automotriz desde 2010.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Autos</h4>
+                    <ul>
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (061) 123-456</li>
+                        <li><i class="fas fa-envelope"></i> ventas@grupomopal.pe</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jr. Grau 135, Pucallpa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Grupo Mopal - Todos los derechos reservados</p>
+                <p class="toyota-credit">Toyota - Siempre mejor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/51987654321" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

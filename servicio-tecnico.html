@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico Toyota | Grupo Mopal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR (igual) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-mopal-toyota.webp" alt="Grupo Mopal - Toyota" onerror="this.src='https://via.placeholder.com/200x40?text=GRUPO+MOPAL'">
+                <span class="brand-name"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="autos-nuevos.html">Autos <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#" class="active">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Sedes</a></li>
+                <li><a href="cotizar.html" class="cta-button-nav">Cotizar <i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Servicio Técnico</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero-small">
+        <div class="hero-content">
+            <h1 class="animate-text">Servicio <span class="rojo">Técnico</span> Toyota</h1>
+            <p class="animate-text-delay">Mantenimiento especializado con repuestos originales</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <div class="container">  <!-- 👈 ESTE CONTAINER ES EL QUE FALTABA -->
+            
+            <!-- CARACTERÍSTICAS - AHORA CON ESPACIADO CORRECTO -->
+            <section style="margin: 60px 0;">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px;">
+                    
+                    <div style="text-align: center; padding: 30px; background: white; border-radius: 15px; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-clock" style="font-size: 3.5rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--negro-profundo);">Rapidez</h3>
+                        <p style="color: var(--gris-medio); font-size: 1.1rem;">Servicio express en 2 horas</p>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 30px; background: white; border-radius: 15px; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-certificate" style="font-size: 3.5rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--negro-profundo);">Garantía</h3>
+                        <p style="color: var(--gris-medio); font-size: 1.1rem;">6 meses en todas las reparaciones</p>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 30px; background: white; border-radius: 15px; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-user-tie" style="font-size: 3.5rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--negro-profundo);">Expertos</h3>
+                        <p style="color: var(--gris-medio); font-size: 1.1rem;">Técnicos certificados Toyota</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICIOS -->
+            <section style="margin: 80px 0;">
+                <h2 class="section-title">Nuestros <span class="rojo">servicios</span></h2>
+                <p class="section-subtitle">Ofrecemos mantenimiento especializado para tu Toyota</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 40px;">
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave); transition: all 0.3s ease;">
+                        <i class="fas fa-oil-can" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Cambio de aceite</h3>
+                        <p style="color: var(--gris-medio);">Aceite original Toyota y filtros</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-car-battery" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Baterías</h3>
+                        <p style="color: var(--gris-medio);">Baterías con garantía Toyota</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-wrench" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Frenos</h3>
+                        <p style="color: var(--gris-medio);">Pastillas, discos y líquido de frenos</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-fan" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Aire acondicionado</h3>
+                        <p style="color: var(--gris-medio);">Mantenimiento y reparación</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-cog" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Alineación y balanceo</h3>
+                        <p style="color: var(--gris-medio);">Equipo de última tecnología</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-search" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Diagnóstico computarizado</h3>
+                        <p style="color: var(--gris-medio);">Scanner Toyota original</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-tachometer-alt" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Suspensión</h3>
+                        <p style="color: var(--gris-medio);">Amortiguadores y dirección</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; box-shadow: var(--sombra-suave);">
+                        <i class="fas fa-bolt" style="font-size: 3rem; color: var(--rojo-toyota); margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Sistema eléctrico</h3>
+                        <p style="color: var(--gris-medio);">Diagnóstico y reparación</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AGENDAR CITA -->
+            <section style="background: linear-gradient(135deg, var(--negro-profundo), var(--negro-suave)); color: white; padding: 80px; border-radius: 30px; text-align: center; margin: 80px 0;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">¿Necesitas un <span class="rojo">servicio</span>?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9;">Agenda tu cita en línea y obtén 10% de descuento en mano de obra</p>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <a href="cotizar.html?servicio=tecnico" class="btn-primary" style="font-size: 1.2rem; padding: 15px 40px;">Agendar cita</a>
+                    <a href="https://wa.me/51987654321" class="btn-secondary" style="background: transparent; color: white; border-color: white;">WhatsApp</a>
+                </div>
+            </section>
+
+            <!-- VENTAJAS ADICIONALES -->
+            <section style="margin: 80px 0;">
+                <h2 class="section-title">Ventajas del <span class="rojo">Servicio Toyota</span></h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                    <div style="display: flex; align-items: center; gap: 20px; background: white; padding: 30px; border-radius: 15px;">
+                        <i class="fas fa-clock" style="font-size: 3rem; color: var(--rojo-toyota);"></i>
+                        <div>
+                            <h3 style="margin-bottom: 5px;">Horario extendido</h3>
+                            <p style="color: var(--gris-medio);">Sábados hasta la 1:30 PM</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 20px; background: white; padding: 30px; border-radius: 15px;">
+                        <i class="fas fa-truck" style="font-size: 3rem; color: var(--rojo-toyota);"></i>
+                        <div>
+                            <h3 style="margin-bottom: 5px;">Recogida y entrega</h3>
+                            <p style="color: var(--gris-medio);">Servicio de valet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>  <!-- 👈 CIERRE DEL CONTAINER -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>GRUPO MOPAL</span>
+                    </div>
+                    <p>Concesionario oficial de la marca Toyota en Pucallpa, Huánuco y Pasco. Excelencia automotriz desde 2010.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Autos</h4>
+                    <ul>
+                        <li><a href="autos-nuevos.html">Nuevos</a></li>
+                        <li><a href="autos-seminuevos.html">Seminuevos</a></li>
+                        <li><a href="autos-hibridos.html">Híbridos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="servicio-tecnico.html">Servicio Técnico</a></li>
+                        <li><a href="postventa.html">Postventa</a></li>
+                        <li><a href="seguro.html">Seguro Toyota</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (061) 123-456</li>
+                        <li><i class="fas fa-envelope"></i> ventas@grupomopal.pe</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jr. Grau 135, Pucallpa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Grupo Mopal - Todos los derechos reservados</p>
+                <p class="toyota-credit">Toyota - Siempre mejor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/51987654321" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
